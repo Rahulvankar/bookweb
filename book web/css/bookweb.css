@@ -39,6 +39,16 @@ html::-webkit-scrollbar-thumb {
     background: var(--black);
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
 .header .header-1 {
     background-color: #fff;
     padding: 1.5rem 9%;
@@ -194,6 +204,17 @@ body {
     border: var(--border);
     border-radius: .5rem;
     padding: 1rem 1.2rem;
+}
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem 0;
+}
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
 }
 
 
