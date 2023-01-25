@@ -1,15 +1,22 @@
-window.onscroll = () =>{
-    if(window.scroll > 80){
+searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active');
+}
+
+window.onscroll = () => {
+    searchForm.classList.remove('active');
+    if (window.scroll > 80) {
         document.querySelector('.header .header-2').classList.add('active');
-    }else{
+    } else {
         document.querySelector('.header .header-2').classList.remove('active');
 
     }
 }
-window.onload = () =>{
-    if(window.scroll > 80){
+window.onload = () => {
+    if (window.scroll > 80) {
         document.querySelector('.header .header-2').classList.add('active');
-    }else{
+    } else {
         document.querySelector('.header .header-2').classList.remove('active');
 
     }
